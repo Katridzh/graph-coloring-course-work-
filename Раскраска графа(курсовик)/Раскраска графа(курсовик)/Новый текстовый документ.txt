@@ -1,0 +1,3 @@
+cd C:\Users\Катя\source\repos\Раскраска графа(курсовик)
+
+C:\Users\Катя\source\repos\Раскраска графа(курсовик)>"Debug\Раскраска графа(курсовик).exe" "C:\Users\Катя\source\repos\Раскраска графа(курсовик)\korona.txt" "C:\Users\Катя\source\repos\Раскраска графа(курсовик)\result.gv"

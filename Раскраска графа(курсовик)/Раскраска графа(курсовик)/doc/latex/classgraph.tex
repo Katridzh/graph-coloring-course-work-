@@ -1,0 +1,131 @@
+\hypertarget{classgraph}{}\section{graph Class Reference}
+\label{classgraph}\index{graph@{graph}}
+
+
+Graph class.  
+
+
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgraph_a6aaa56b4528d2fdb8f0ecd97e04f6651}{graph}} ()
+\item 
+\mbox{\hyperlink{classgraph_aeb62eaf197cdcb4800fa016eebc3d55a}{$\sim$graph}} ()
+\item 
+void \mbox{\hyperlink{classgraph_a482d2e18b347f67173851baeeaaa5c6d}{input}} (ifstream \&fin)
+\begin{DoxyCompactList}\small\item\em Input graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgraph_a5ac8acb102a80223b0e3323187e3c332}{output}} (ofstream \&fout)
+\begin{DoxyCompactList}\small\item\em Output graph. \end{DoxyCompactList}\item 
+vector$<$ list$<$ int $>$ $>$ \mbox{\hyperlink{classgraph_ac6961a5c88af017a4a65e1cd0777edf2}{greedy}} ()
+\begin{DoxyCompactList}\small\item\em Greedy algorithm of graph coloring. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classgraph_ae5a95fda9e9625f69ec8648759844ecb}{sort}} ()
+\begin{DoxyCompactList}\small\item\em The function of sorting graph nodes by their powers in descending order. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgraph_a616bd73237d105238130e6d131d164e6}{brute\+\_\+force}} (int node, int max\+\_\+color)
+\begin{DoxyCompactList}\small\item\em Brute-\/force graph coloring algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Graph class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgraph_a6aaa56b4528d2fdb8f0ecd97e04f6651}\label{classgraph_a6aaa56b4528d2fdb8f0ecd97e04f6651}} 
+\index{graph@{graph}!graph@{graph}}
+\index{graph@{graph}!graph@{graph}}
+\subsubsection{\texorpdfstring{graph()}{graph()}}
+{\footnotesize\ttfamily graph\+::graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgraph_aeb62eaf197cdcb4800fa016eebc3d55a}\label{classgraph_aeb62eaf197cdcb4800fa016eebc3d55a}} 
+\index{graph@{graph}!````~graph@{$\sim$graph}}
+\index{````~graph@{$\sim$graph}!graph@{graph}}
+\subsubsection{\texorpdfstring{$\sim$graph()}{~graph()}}
+{\footnotesize\ttfamily graph\+::$\sim$graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgraph_a616bd73237d105238130e6d131d164e6}\label{classgraph_a616bd73237d105238130e6d131d164e6}} 
+\index{graph@{graph}!brute\+\_\+force@{brute\+\_\+force}}
+\index{brute\+\_\+force@{brute\+\_\+force}!graph@{graph}}
+\subsubsection{\texorpdfstring{brute\+\_\+force()}{brute\_force()}}
+{\footnotesize\ttfamily bool graph\+::brute\+\_\+force (\begin{DoxyParamCaption}\item[{int}]{node,  }\item[{int}]{max\+\_\+color }\end{DoxyParamCaption})}
+
+
+
+Brute-\/force graph coloring algorithm. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em node} & -\/ the number of the node from which we start coloring the graph \\
+\hline
+\mbox{\tt in}  & {\em max\+\_\+color} & -\/ the quantity of colors that we will try to color the graph \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the graph is colored, 0 if the graph is not colored 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgraph_ac6961a5c88af017a4a65e1cd0777edf2}\label{classgraph_ac6961a5c88af017a4a65e1cd0777edf2}} 
+\index{graph@{graph}!greedy@{greedy}}
+\index{greedy@{greedy}!graph@{graph}}
+\subsubsection{\texorpdfstring{greedy()}{greedy()}}
+{\footnotesize\ttfamily vector$<$ list$<$ int $>$ $>$ graph\+::greedy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Greedy algorithm of graph coloring. 
+
+\begin{DoxyReturn}{Returns}
+color\+\_\+table -\/ format to storage of the painted graph 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classgraph_a482d2e18b347f67173851baeeaaa5c6d}\label{classgraph_a482d2e18b347f67173851baeeaaa5c6d}} 
+\index{graph@{graph}!input@{input}}
+\index{input@{input}!graph@{graph}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void graph\+::input (\begin{DoxyParamCaption}\item[{ifstream \&}]{fin }\end{DoxyParamCaption})}
+
+
+
+Input graph. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fin} & -\/ object of class ifsream (input stream class to operate on files) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgraph_a5ac8acb102a80223b0e3323187e3c332}\label{classgraph_a5ac8acb102a80223b0e3323187e3c332}} 
+\index{graph@{graph}!output@{output}}
+\index{output@{output}!graph@{graph}}
+\subsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily void graph\+::output (\begin{DoxyParamCaption}\item[{ofstream \&}]{fout }\end{DoxyParamCaption})}
+
+
+
+Output graph. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em fout} & -\/ object of class �fsream (output stream class to operate on files) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classgraph_ae5a95fda9e9625f69ec8648759844ecb}\label{classgraph_ae5a95fda9e9625f69ec8648759844ecb}} 
+\index{graph@{graph}!sort@{sort}}
+\index{sort@{sort}!graph@{graph}}
+\subsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily vector$<$ int $>$ graph\+::sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function of sorting graph nodes by their powers in descending order. 
+
+\begin{DoxyReturn}{Returns}
+sort\+\_\+array -\/ sorted array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Раскраска графа(курсовик)/\mbox{\hyperlink{_graph_8h}{Graph.\+h}}\item 
+Раскраска графа(курсовик)/\mbox{\hyperlink{_graph_8cpp}{Graph.\+cpp}}\end{DoxyCompactItemize}
